@@ -1,6 +1,6 @@
 {
   "name": "purescript-totally",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PureScript exhaustivity checker for prisms.",
   "license": "MIT",
   "devDependencies": {
