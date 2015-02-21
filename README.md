@@ -2,27 +2,34 @@
 
 ## Module Optic.Totally
 
-### Type Classes
+#### `Totally`
+
+``` purescript
+class Totally a where
+  totally :: forall b. a -> b
+```
 
 
-    class Totally a where
+#### `totallyVoid`
 
-      totally :: forall b. a -> b
-
-
-### Type Class Instances
-
-
-    instance totallyEither :: (Totally a, Totally b) => Totally (Either a b)
+``` purescript
+instance totallyVoid :: Totally Void
+```
 
 
-    instance totallyVoid :: Totally Void
+#### `totallyEither`
+
+``` purescript
+instance totallyEither :: (Totally a, Totally b) => Totally (Either a b)
+```
 
 
-### Values
+#### `like`
 
+``` purescript
+like :: forall a b c d e. ((a -> Either a Void) -> b -> Either c d) -> (c -> e) -> (d -> e) -> b -> e
+```
 
-    like :: forall a b c d e. ((a -> Either a Void) -> b -> Either c d) -> (c -> e) -> (d -> e) -> b -> e
 
 
 

@@ -1,14 +1,14 @@
 {
   "name": "purescript-totally",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PureScript exhaustivity checker for prisms.",
   "license": "MIT",
   "dependencies": {
     "purescript-either": "~0.1.4",
-    "purescript-tuples": "~0.2.3",
+    "purescript-tuples": "~0.3.0",
     "purescript-void": "~0.1.0"
   },
   "devDependencies": {
-    "purescript-lens": "~0.5.0"
+    "purescript-lens": "~0.6.0"
   }
 }
