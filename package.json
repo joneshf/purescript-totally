@@ -1,4 +1,8 @@
 {
+  "name": "purescript-totally",
+  "version": "1.0.0",
+  "description": "PureScript exhaustivity checker for prisms.",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "clean": "rimraf output && rimraf .pulp-cache",
